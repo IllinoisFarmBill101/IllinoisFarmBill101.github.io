@@ -1,0 +1,134 @@
+            <div class="secondArticle">
+                <h1>Second Article Title</h1>
+                <p>The best legal blogs are updated regularly with fresh, relevant content and offer readers insight or a perspective on a critical legal matter they may not have considered before.
+
+                    A good law blog contains comprehensive and informative articles that are easily digestible in one sitting. A great attorney blog also updates older articles when new information comes out or periodically revisits older articles to refresh them and bring them to the attention of new readers.
+                    
+                    You can rely on lawyer blogs for attorneys to offer guidance and insight to the lay reader and legal professionals alike.</p>
+                    <p>The best legal blogs are updated regularly with fresh, relevant content and offer readers insight or a perspective on a critical legal matter they may not have considered before.
+
+                        A good law blog contains comprehensive and informative articles that are easily digestible in one sitting. A great attorney blog also updates older articles when new information comes out or periodically revisits older articles to refresh them and bring them to the attention of new readers.
+                        
+                        You can rely on lawyer blogs for attorneys to offer guidance and insight to the lay reader and legal professionals alike.</p>
+                </div>
+
+
+
+
+Table of contents:
+--------------------------------------------------------
+
+    <div class="toc-wrapper">
+        <div class="toc-header">
+            <h4 class="toc-heading">Table of Contents</h4>
+        </div>
+
+        <div class="toc-list-wrapper">
+            <ul class="toc-list">
+                <li class="toc-list-item">
+                    <a href="#firstPage">First</a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#secondPage">Second</a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#firstPage">Third</a>
+                </li>
+                <li class="toc-list-item">
+                    <a href="#secondPage">Fourth</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+CSS for table of contents
+--------------------------------------------------------
+
+
+.toc-wrapper {
+    background-color: #fff;
+    box-shadow: 0 3px 30px rgb(0 0 0 / .24);
+    max-width: 300px;
+    margin: auto;
+    border-radius: 10px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-top: 90px;
+}
+.toc-header {
+    background: #2c495e;
+    padding: 30px;
+    border-radius: 50px 50px 0 100px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.toc-heading {
+    font-size: 30px;
+    color: wheat;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+.toc-list-wrapper {
+    background: #2c495e;
+    border-radius: 50px 0 52px 52px;
+}
+.toc-list {
+    border-radius: 0 100px;
+    background: #fff;
+    margin: 0;
+    list-style: none;
+    padding: 30px 50px;
+
+}
+
+.toc-list-item:not(:last-child) {
+    margin-bottom: 15px;
+    border-bottom: 1px solid black;
+
+}
+
+.toc-list-item a {
+    position: relative;
+    color: #4c4c4c;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25em;
+    display: block;
+    padding: 10px 10px 10px 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease
+}
+
+.toc-list-item a:before {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    position: absolute;
+    border-radius: 50%;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.toc-list-item:hover{
+    box-shadow: 0 8px 15px white;
+    background: wheat;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.toc-list-item:hover::before {
+    background: #fff;
+}
